@@ -21,8 +21,60 @@ typeof  vs instanceof
   for any type of data: typeof returns the exact type and return functions if it is a function.
   for object type only: instanceof returns true or false.
   
+== vs ===
+  == with conversion if the operands with different data type, normally it converts them into number type. then compare
+  === without any conversion for operands, just compare them directly with exactly data type. 55 is not equal '55'
+  
+Block Level Scope
+  There is no Block Level Scope in JavaScript which is not like Java/C/C++ etc.  Please Be Careful below statment.
+  for (var i=0; i < 10; i++){
+    doSomething(i);
+  }
+                   
+  alert(i);    //10
 
   
+  Variable Declaration
+    Var means it is an variable in the immediate context.
+    
+    The variable is declared without var keyword means it is a global variable.
+    
+  Stack vs Heap
+  
+    primary type is saved in stack
+    Object is saved into heap
+    
+  Garbage Collector  based on Mark and Sweep
+  
+    1: marks all variables in memory
+    2: clear the mark for variables which are referenced by variable in context or it is in context.
+    3: delete and reclaim the the variables with the mark then.
+    
+  IE8 and earlier, BOM/DOM are com object which is not navtive JavaScript Object and the Garbage Collecting mechnism is Reference counting.
+  
+  So if any javaScript Object is referencing BOM/DOM
+  
+  Performance/Gargage collecting
+  
+    IE  it collects the garbage based on the number of allocation
+        1:256 variable 
+        2:4096 object/array and 64k string
+      those are threshhold number, once it reachs those numbers then collector is running.
+      the problem will happen if there do have so many numbers of allocation and which will cause frequntly garbage collecting.
+    
+    
+  It is a best practice to dereferrencing one object when it is not needed in such way, it is ready to be reclainmed in next garbage collecting.
+  
+  set the referrence as 'null' to mark it ready to reclaim
+  
+  Summary
+      Primitive value are fixed size so are stored in memory on Stack
+      Referrence value are object and are stored in memory on Heap
+      typeof used to identify the type of primitive data type
+      instanceof used to identify the referrence type of a value
+      
+  
+    
   
 
   
