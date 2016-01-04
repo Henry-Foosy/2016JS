@@ -6,3 +6,23 @@ The arguments for function is kind of Array, so it can be 0,1 or more arguement 
 String is a primitive data type in JavaScript not an object like in other language.
 Number will present all kind of number type(integer, float, etc.)
 
+Dynamic Properties
+    An object with dynamic properties
+    A primitive type can not have any properties.
+
+Copying Value
+  Primitive type:  when one primitive value is assigned from one variable to another. there will be new copied value for another variable.
+                  and the two values in two variable are seperate.
+                  
+
+The arguments for functions are just local varialbe inside the function.
+
+typeof  vs instanceof
+  for any type of data: typeof returns the exact type and return functions if it is a function.
+  for object type only: instanceof returns true or false.
+  
+
+  
+  
+
+  
