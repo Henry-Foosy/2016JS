@@ -1,0 +1,8 @@
+The arguments for function is kind of Array, so it can be 0,1 or more arguement for a function. 
+  1: if you are using one argument does not existing then you will get undefined message.
+  2: there is no overload concept as in Java as the argument is an array it without a signature for a function.
+  3: the later function will overwrite privious one if their name are same.
+
+String is a primitive data type in JavaScript not an object like in other language.
+Number will present all kind of number type(integer, float, etc.)
+
