@@ -1,0 +1,43 @@
+Object Type
+  1: the ways to create object:
+      1:  var obj=new Object();
+      2:  var obj={
+            name: 'Henry',
+            sex: male,
+            age: 12
+      };
+
+
+Function 
+  arguments.callee
+  this
+  arguments.callee.caller
+  
+  
+Function property and methods
+  length:  it indicates the number of named arguments that the function expect
+  toString/toLocaleString: always return the function code
+  valueof: 
+  prototype:
+  apply:   functionname.apply(this, arguments);  If you want to just use argments or already have the arguments array.
+  call:    functionname.call(this, arg1, arg2 ...);   If there are no arguments to pass in
+           
+           The advantage of using apply/call is that we seperate the method and object/instance. they do not need to know each other. 
+           it can be done via this feature.
+  bind(ECMAScript5 specification): this method create one new function and set the context/this with the passed argument.
+            var o = { color: "blue" };
+                   
+            function sayColor(){
+                alert(this.color);
+            }
+            var objectSayColor = sayColor.bind(o);
+            objectSayColor();   //blue
+
+          Here the objectSayColor is the newly created function whose 'this' value = the passed object 'o'
+          The bind() method is supported in Internet Explorer 9+, Firefox 4+, Safari 5.1+, Opera 12+, and Chrome.
+
+Primitive Wrapper Type: Boolean/String/Number:
+  1. Create an instance of the String type.
+  2. Call the specified method on the instance.
+  3. Destroy the instance.
+  
