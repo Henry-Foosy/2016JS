@@ -7,4 +7,6 @@ Recursive Function
   using argument.callee to alleviate the issue that original function name been changed issue during the recursive calling.
   arguments.callee==the function currently being executed.
 
-
+Closure
+  Closure are functions that have access to viariables from another function.
+  Usually created in another function inside.
